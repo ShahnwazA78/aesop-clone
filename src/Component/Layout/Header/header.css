@@ -34,7 +34,7 @@ a {
 }
 .component-wrapper.open {
   height: 90vh;
-  top: -578px;
+  top: -635px;
   transform: translateY(100%); /* Slide in from the top when open */
 }
 /* Add this CSS to your stylesheet */
