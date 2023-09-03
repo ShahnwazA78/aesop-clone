@@ -1,0 +1,60 @@
+a {
+  text-decoration: none !important;
+}
+
+.active {
+  border-bottom: 1.8px solid black !important;
+}
+/* Add CSS to position and style the component */
+.component-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* border:1px solid green; */
+  /* top:0px; */
+  /* display: none; */
+  height: 100%;
+  /* z-index: -10000; */
+  /* Initially off-screen above the viewport */
+  right: 0;
+  left: 0; /* Make the component full-width */
+  color: black;
+  /* box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0); /* Initially hidden above */
+}
+
+.skinCare {
+  background-color: #f0efe0;
+  margin: 0;
+  padding: 0;
+}
+.bodyAndHand{
+  background-color: #ece3d3;
+}
+.component-wrapper.open {
+  height: 90vh;
+  top: -578px;
+  transform: translateY(100%); /* Slide in from the top when open */
+}
+/* Add this CSS to your stylesheet */
+.hover-link {
+  text-decoration: none;
+  position: relative;
+  color: #333333;
+}
+
+.hover-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: .82px;
+  background-color: #333333;
+  transition: right 0.5s ease;
+}
+
+.hover-link:hover::before {
+  right: 0;
+}

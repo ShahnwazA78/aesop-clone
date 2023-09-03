@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap');
+.home {
+  height: 90vh;
+}
+.hero {
+  display: flex;
+  padding: 6.5rem 3rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 10vh; */
+  flex-direction: column;
+  background-image: url("https://www.aesop.com/u1nb1km7t5q7/AGQGWYrTapcQI1NrPvsYU/11e99769c1767531dd3c12b6fce85f37/Aesop_Bar_Soaps_2023_Web_Homepage_2_Primary_Full_Bleed_Desktop_2880x1044px.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slick-dots {
+  transition: all 0.5s ease-in-out;
+  display: flex !important;
+  justify-content: space-around;
+}
+li {
+  /* border:1px solid red; */
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.slick-dots li button:before {
+  transition: all 0.5s ease-in-out;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 2px !important;
+  content: "" !important;
+  margin: 0 !important;
+  text-align: center;
+  opacity: 0.25;
+  background-color: black;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-arrow {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  z-index: 100;
+  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.744) !important;
+  width: 5rem !important;
+  height: 3rem !important;
+  padding: 2rem !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.slick-arrow:hover {
+  opacity: 1;
+}
+.slick-prev{
+   transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%) !important;
+}
+.slick-next {
+  /* left:77rem; */
+  /* top: 50px !important; */
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(100%) !important;
+}
+.slick-next:hover{
+ 
+  transform: translateX(20%) !important;
+}
+.slick-prev:hover {
+  
+  transform: translateX(-20%) !important;
+}
+
+.slick-disabled{
+  display: none !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 30px !important;
+  line-height: 1;
+  opacity: 0.75;
+  color: rgba(255, 255, 255, 0.764) !important;
+}
+.carousel-item-container {
+  position: relative;
+}
+.carousel-img{
+  cursor: pointer;
+}
+.carousel-heading>a:hover{
+    border-bottom: .8px solid;
+}
+.carousel-heading>a{
+  transition: all 0.3s ease;
+  border-bottom: .8px solid  #fffef2;
+}
+.carousel-img:hover + .carousel-heading>a {
+  border-bottom: .8px solid;
+
+}
